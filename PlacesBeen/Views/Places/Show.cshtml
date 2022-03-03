@@ -2,13 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>My To-Do List!</title>
+    <title>Places You've Been!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
   </head>
-  <body class="container">
-    <h1>Welcome to Places You've Been, the online travel diary!</h1>
-    <a href='/places/new' class="mx-3">Add a new location you've been to</a>
-    <a href='/places' class="mx-3">See all the places you've been</a>
+  <body>
+    <h1>Places You've Been Details: </h1>
+
+    <h2>@Model.CityName</h2>
+    <img src=@Model.PicURL> 
+
+    <a href='/places/new'>Add another item</a>
+    <a href='/places'>View all items</a>
   </body>
 </html>
